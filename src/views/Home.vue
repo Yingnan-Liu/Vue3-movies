@@ -17,7 +17,7 @@
     <!-- 搜索结果 -->
     <div class="movies-list">
       <div class="movie" v-for="movie in movies" :key="movie.imdbID" >
-        <router-link class="movie-link" to="'/movie/' + movie.imdbID">
+        <router-link  :to="{name:'Movie Detail',params:{id:movie.imdbID}}" class="movie-link">
           <div class="product-image">
             <img :src="movie.Poster" alt="movie poster"/>
             <div class="type">{{movie.Type}}</div>
@@ -54,6 +54,7 @@ export default {
          }).catch(error=>console.log(error))
        }
      }
+    
 
      return{
        search,
