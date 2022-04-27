@@ -34,6 +34,7 @@ header{
   align-items:center;
   justify-content: center;
   background-color:#2C3D4E;
+  padding:10px 16px;
   box-shadow:0px 0px 6px rgba(0,0,0,0.1);
   h1{
     color:white;
